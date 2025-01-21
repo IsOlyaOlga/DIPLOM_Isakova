@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b5b40ef-c23a-47df-ac7d-8636d1cf227f">
+  <producedTypes>
+    <objectType typeId="15ba466b-f333-4f9f-9a76-50a1116e8504" valueTypeId="2d1d9f2c-583d-493c-b07a-7f0cfbb4a46a"/>
+    <refType typeId="455a25ab-b569-417b-9c50-5ff03a68e574" valueTypeId="78b01224-471c-4d38-876a-5043d0ebb972"/>
+    <selectionType typeId="c9853762-873d-4434-b7bb-2be9006202c4" valueTypeId="4eaf9192-8d09-4144-9164-a2f40db4125b"/>
+    <listType typeId="5eadbcab-a910-4834-a0da-fd261ab9493b" valueTypeId="fc8a7cd5-2c3e-4356-a1d0-d183796bada2"/>
+    <managerType typeId="b71b4371-0971-4a42-9cfb-85fdd24cc41b" valueTypeId="38e2ed84-63c2-47ba-8b70-e03a702fa06d"/>
+  </producedTypes>
+  <name>ВКМ_НачислениеФиксированныхПремий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление фиксированных премий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_НачислениеФиксированныхПремий.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Начисление фиксированных премий</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Начисление фиксированных премий</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="910ecc14-ab07-4e83-a00d-873613f019a8">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="d23cf99e-8655-474d-bdc3-3e128352e8aa">
+    <producedTypes>
+      <objectType typeId="f50ca6e9-1d2c-427a-8181-738ebf03ee98" valueTypeId="749255bf-9b57-4a43-bc13-76c1770ac2ff"/>
+      <rowType typeId="2bf0c4ed-6ed3-4598-b9ec-cc21ff440ae6" valueTypeId="e3e37173-2592-4d97-856b-83f3f112e29f"/>
+    </producedTypes>
+    <name>ПремияНачисленная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Премия начисленная</value>
+    </synonym>
+    <attributes uuid="76aefdc8-4386-4713-96f2-ecf3687b9e35">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c809d0f9-9833-450e-b25a-1c3289b0efd7">
+      <name>СуммаПремии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма премии</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
